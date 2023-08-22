@@ -1,5 +1,5 @@
 <div style="display: flex; justify-content: center">
-<!--   <div style="max-width: 15%">
+  <!--   <div style="max-width: 15%">
     <h3 style="font-family: 'Roboto', sans-serif;">
       A 12-hr picker, with a 5-min interval.
     </h3>
@@ -15,23 +15,25 @@
     </timeless-time-picker>
   </div> -->
 
-  <div style="max-width: 15%; padding-left: 10em">
+  <div class="rounded-border main-box">
     <h3 style="font-family: 'Roboto', sans-serif;">
-      This picker uses a 24-hr format and a different selection box and adds a divider.
+      This picker uses a 24-hr format and a different selection box and adds a
+      divider.
     </h3>
     <timeless-time-picker
-      [hourFormat]="'hours24'"
+      [hourFormat]="'hours12'"
       [visibleItemsCount]="5"
       [size]="'large'"
-      [selectionHighlightStyle]="'separate'"
+      [selectionHighlightStyle]="'spanning'"
       [selectionBoxBackground]="false"
       [showDivider]="true"
       [showSeconds]="false"
-      [minuteStep]="1">
+      [minuteStep]="1"
+    >
     </timeless-time-picker>
   </div>
 
-<!--   <div style="max-width: 15%; padding-left: 10em">
+  <!--   <div style="max-width: 15%; padding-left: 10em">
     <h3 style="font-family: 'Roboto', sans-serif;">
       This picker also shows a seconds column.
     </h3>
@@ -47,4 +49,3 @@
     </timeless-time-picker>
   </div> -->
 </div>
-
